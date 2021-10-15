@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación de fracciones</title>
+
+    <link rel="stylesheet" type="text/css" href="node_modules/animate.css/animate.min.css">
+
+    <link rel="preload" href="styles.css" as="styles">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+
+
+
+</head>
+
+
+<body onload="init()"></body>
+<div class="contendor-bienvenida">
+    <div class="contenido-actividad-bienvenida">
+        <div class="recuadro-explicacion-1 animate__animated animate__fadeIn" id="slide-1">
+            <div class="titulo-interactiva">
+                <h1 class="animate__animated animate__fadeInLeft" style="text-shadow: 2px 3px 2px #a0a0ba;">
+                    CALCULEMOS POTENCIAS DE NÚMEROS ENTERES</h1>
+                <p>Bienvenidos, a continuación podremos practicar de manera interactiva el cálculo de potencias de
+                    números enteros.</p>
+
+            </div>
+
+
+        </div>
+        <div class="recuadro-explicacion-2 animate__animated animate__fadeIn" id="slide-2">
+            <div class="contendor-actividad">
+                <p>Completamos las casillas escribiendo el número correspondiente para desarrollar el cálculo de la
+                    potencia y su correspondiente resultado. Al finalizar comprobamos la respuesta y corregimos si es
+                    necesario, de lo contrario continuamos con el siguiente ejercicio.</p>
+                    <span><b>Ejercicio <div id="numeroEjercicio" >1</div>:</b></span>
+                    <div class="table-scrolling">
+                <div class="contenedor-actividad">
+                    <div>
+                        <div class="numeroActividad">
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="contenedor-inputs">
+
+
+                            <div class="row">
+                               <!-- El contenido de este div se carga dinamicamente desde js-->
+                            </div>
+                            <div class="row">
+                               <!-- El contenido de este div se carga dinamicamente desde js-->
+                            </div>
+
+                        </div>
+                    </div>
+                   
+                </div>
+                    </div>
+                <div>
+                    <div class="mensajeActividad">
+                        !Datos incorrectos¡
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor-botones">
+                <div onclick="comprobar()" id="comprobar" class="button_siguiente">Comprobar&nbsp;✍</div>
+               <!--  <div onclick="atrasFracciones()" id="atrasFracciones" class="button_atras">◀&nbsp;Atras</div> -->
+                <div onclick="fraccionesAleatorias()" id="siguienteFraccion" class="button_siguiente">Siguiente&nbsp;▶
+                </div>
+            </div>
+
+        </div>
+        <div style="height: 38px;width: 100%;display: flex;justify-content: space-between;">
+            <div onclick="atras()" id="atras" class="button_atras" />◀&nbsp;Atras
+        </div>
+        <div onclick="siguiente()" id="siguiente" class="button_siguiente" />Siguiente&nbsp;▶
+    </div>
+    <div onclick="siguiente()" id="actividad" class="button_actividad" />Listo&nbsp;✍
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+<!-- TODO -->
+<!-- aun no configuro audios -->
+<!-- <audio id="mireproductor" preload="none" src="./public/sounds/148.mp3"></audio> -->
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
