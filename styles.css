@@ -328,8 +328,8 @@ input[type="phone"] {
 
 .table-scrolling {
   width: 100%;
-  overflow-x: scroll;
-  overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
   height: auto;
   pointer-events: all;
 }
@@ -560,7 +560,7 @@ input[type="phone"] {
   justify-content: center;
   align-items: normal;
   align-content: space-between;
-  height: 66vh;
+  height: 50vh;
 }
 
 .recuadro-explicacion-2 {
